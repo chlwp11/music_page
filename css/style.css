@@ -19,7 +19,7 @@ body {
   clip-path: polygon( 0 0 , 97% 0 ,100% 94% , 0 100%)
 }
 
-.playlist {
+.main > .playlist {
   position: absolute;
   z-index: 2;
   top:30%;
@@ -28,34 +28,13 @@ body {
   background-color: #fff;
   border-radius: 6px;
 }
-button {
-  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-  font-size: 15px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: #3f4150;
-  background-color: #fff;
-  border: none;
-  cursor: pointer;
-}
 
-button:focus,
-button:active {
-  outline: none;
-  box-shadow: none;
-}
-
-.title {
+.main > .playlist > .title {
   width: 200px;
   margin-bottom: 16px;
 }
 
-.title img {
-  width: 100%;
-  height: auto;
-}
-
-.playlist h1 {
+.main > .playlist > h1 {
   margin-bottom: 8px;
   font-size: 16px;
   font-weight: 500;
@@ -63,14 +42,14 @@ button:active {
   color: #3f4150;
 }
 
-.dropdown {
+.main > .playlist > .dropdown {
   position: relative;
   z-index: 1;
   width: 300px;
   margin-bottom: 8px;
 }
 
-.dropdown-toggle {
+.main > .playlist > .dropdown > .dropdown-toggle {
   width: 100%;
   height: 50px;
   padding: 0 16px;
@@ -80,19 +59,18 @@ button:active {
   text-align: left;
   border: 1px solid rgba(224, 226, 231, 0.75);
   border-radius: 6px;
-  transition: border-color 100ms ease-in;
 }
 
-.dropdown-toggle.selected {
+.main > .playlist > .dropdown > .dropdown-toggle.selected {
   color: #3f4150;
   border-color: rgba(224, 226, 231, 1);
 }
 
-.dropdown-toggle:active {
+.main > .playlist > .dropdown > .dropdown-toggle:active {
   border-color: rgba(224, 226, 231, 1);
 }
 
-.dropdown-menu {
+.main > .playlist > .dropdown >.dropdown-menu {
   position: absolute;
   z-index: 2;
   top: calc(100% + 15px);
@@ -107,14 +85,14 @@ button:active {
     max-height 200ms ease-in, box-shadow 200ms ease-in;
 }
 
-.dropdown-menu.show {
+.main > .playlist > .dropdown > .dropdown-menu.show {
   padding: 8px 0;
   max-height: 280px;
   border-color: rgba(224, 226, 231, 0.5);
   box-shadow: 0 4px 9px 0 rgba(63, 65, 80, 0.1);
 }
 
-.dropdown-option {
+.main > .playlist > .dropdown > ul > li > .dropdown-option {
   width: 100%;
   height: 44px;
   padding: 0 16px;
@@ -122,11 +100,11 @@ button:active {
   text-align: left;
 }
 
-.dropdown-option:hover {
+.main > .playlist > .dropdown > ul > li > .dropdown-option:hover {
   background-color: #f8f9fa;
 }
 
-.play-button {
+.main > .playlist > .play-button {
   position: relative;
   display: block;
   width: 100%;
@@ -138,7 +116,7 @@ button:active {
   border-radius: 6px;
   transition: background-color 150ms ease-in;
 }
-.stop-button {
+.main > .playlist > .stop-button {
   position: relative;
   display: none;
   width: 100%;
@@ -151,32 +129,32 @@ button:active {
   transition: background-color 150ms ease-in;
 }
 
-.play-button:disabled {
+.main > .playlist > .play-button:disabled {
   background-color: #e0e2e7;
   cursor: not-allowed;
 }
 
-button:focus{
+.main > .playlist > button:focus{
   border: 1px solid red !important;
 }
 
-.play {
+.main > .playlist > .play {
   position: absolute;
   bottom: -27%;
   left: -4%;
 }
-.play_1 {
+.main > .playlist > .play_1 {
   display: none;
 }
-.play_2 {
+.main > .playlist > .play_2 {
   display: none;
 }
-.play_3 {
+.main > .playlist > .play_3 {
   display: none;
 }
-.play_4 {
+.main > .playlist > .play_4 {
   display: none;
 }
-.play_5 {
+.main > .playlist > .play_5 {
   display: none;
 }
