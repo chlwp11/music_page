@@ -139,11 +139,9 @@ button:active {
   transition: background-color 150ms ease-in;
 }
 .stop-button {
-  position: absolute;
-  bottom:40px;
-  left:40px;
+  position: relative;
   display: none;
-  width: 200px;
+  width: 100%;
   height: 44px;
   padding: 0 16px;
   line-height: 44px;
